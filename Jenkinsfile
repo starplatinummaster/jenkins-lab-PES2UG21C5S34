@@ -20,11 +20,6 @@ pipeline {
             sh './output'
         }
     }
-    stage('Deploy') {
-        steps {
-            echo 'deploy'
-        }
-    }    
 }
 post{
     failure{

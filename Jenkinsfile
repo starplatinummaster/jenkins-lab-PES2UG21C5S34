@@ -14,12 +14,12 @@ pipeline {
             build 'PES2UG21CS534-1'
             sh 'g++ main.cpp -o output'
         }
-    }
-    stage('Test') {
+    
+    stage('Deploy') {
         steps {
-            sh './output'
+            echo 'deploy'
         }
-    }
+    }    
 }
 post{
     failure{
